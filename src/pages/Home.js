@@ -17,12 +17,10 @@ const Home = () => {
     })
 },[])
 
-  const state = useSelector((state) => state);
-  console.log(state);
 
 
   return (
-    <div>
+    <div className="max-w-screen-xl mx-auto">
       <h2>This is home page</h2>
       <div className="grid lg:grid-cols-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
         {products.map((product) => (
